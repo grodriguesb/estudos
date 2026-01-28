@@ -111,6 +111,16 @@ async function playRaceEngine(character1, character2) {
             await logRollResult(character1.NOME, "força", diceResult1, character1.PODER)
             await logRollResult(character2.NOME, "força", diceResult2, character2.PODER)
         }
+
+        // verificando o vencedor
+        if (totalTestSkill1 > totalTestSkill2) {
+            console.log(`${character1.NOME} marcou um ponto!`)
+            character1.PONTOS++
+        } else if (totalTestSkill2 > totalTestSkill1) {
+            console.log(`${character2.NOME} marcou um ponto!`)
+            character2.PONTOS++
+        }
+        console.log("------------------------")
     }
 }
 
