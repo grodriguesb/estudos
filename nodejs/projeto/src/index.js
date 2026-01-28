@@ -51,11 +51,15 @@ async function rollDice() {
 }
 
 async function playRaceEngine(character1, character2) {
-
+    for (let round = 1; round <= 5; round++) {
+        console.log(`🏁 Rodada ${round}`)
+        
+        // sortear bloco
+    }
 }
 
 (async function main() {
-    console.log(`🏁🚦Corrida entre ${player1.NOME} e ${player5.NOME} começando...\n`)
+    console.log(`🏁🚦 Corrida entre ${player1.NOME} e ${player5.NOME} começando...\n`)
 
     await playRaceEngine(player1, player2)
 })()
