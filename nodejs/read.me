@@ -104,14 +104,24 @@ const devArea = {
     production: false,
 }
 
+// modelo para exportação unica
 module.exports = devArea;
+
+_________________________
+
+// modelo para multiplas exportações
+module.exports = {
+    devArea,
+    client,
+}
+
 
 ======== require Consts ========
 E para importar uma constante:
 
-//declara uma constante, e importa o arquivo desejado
+// declara uma constante, e importa o arquivo desejado
 const config = require("./services/config")
 
-//chama a constante conforme desejado
+// chama a constante conforme desejado
 console.log(config.devArea)
 =====================================
