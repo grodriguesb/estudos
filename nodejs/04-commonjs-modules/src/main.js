@@ -1,9 +1,12 @@
 const p= require("./services/products")
+const config = require("./services/config")
 
 async function main() {
-    console.log('Hello World')
-    p.getFullName("408", "mousepad")
-    p.getFullName("324", "mouse")
+    console.log('Carrinho de compras:')
+    // p.getFullName("408", "mousepad")
+    // p.getFullName("324", "mouse")
+
+    console.log(config.devArea)
 }
 
 main()

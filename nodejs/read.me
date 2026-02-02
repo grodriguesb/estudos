@@ -95,3 +95,23 @@ e para fazer a chamada de uma função, realizar da seguinte forma:
 
 variavel-da-require.nome-da-funcao()
 =====================================
+
+======== Export Consts ========
+Para exportar uma constante, no arquivo em que será exportado, utiliza-se o seguinte comando:
+
+const devArea = {
+    version: "01ab",
+    production: false,
+}
+
+module.exports = devArea;
+
+======== require Consts ========
+E para importar uma constante:
+
+//declara uma constante, e importa o arquivo desejado
+const config = require("./services/config")
+
+//chama a constante conforme desejado
+console.log(config.devArea)
+=====================================
