@@ -141,3 +141,13 @@ exports.nome-da-funcao = (variavel) => {
     //logica da função    
 }
 =====================================
+
+======== Export Default ========
+Para importar apenas as funções que serão efetivamente utilizadas no arquivo atual, é possível realizar a importação diretamente pelo nome das funções, conforme o exemplo abaixo:
+
+const {funcao-1, funcao-2} = require("caminho/do/arquivo/javascript")
+
+Dessa forma, pode-se realizar a chamada das funções diretamente pelo nome, sem a necessidade de referenciar o objeto completo:
+
+funcao-1("parametro")
+=====================================
