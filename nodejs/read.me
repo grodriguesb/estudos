@@ -125,3 +125,9 @@ const config = require("./services/config")
 // chama a constante conforme desejado
 console.log(config.devArea)
 =====================================
+
+======== Hidden Members ========
+Um arquivo em JavaScript é tratado como um módulo. Quando é necessário utilizar uma função ou constante definida em outro arquivo JavaScript, deve-se exportar essa função ou constante no arquivo onde ela foi declarada e, em seguida, importá-la no arquivo onde será utilizada.
+
+Durante a exportação, não é obrigatório exportar todas as funções ou constantes do módulo. Aqueles elementos que não são exportados permanecem acessíveis apenas dentro do próprio arquivo e são chamados de “Hidden Members” ou “Membros Ocultos”.
+=====================================
