@@ -1,10 +1,10 @@
 // export default
 
-exports.conectToDatabase = (dataName) => {
+exports.conectToDatabase = async (dataName) => {
     console.log("se conectando ao banco: " + dataName)    
 }
 
-exports.disconnectDatabase = () => {
+exports.disconnectDatabase = async () => {
     // lógica
     console.log("desconectando")
 }
