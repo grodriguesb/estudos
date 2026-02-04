@@ -131,3 +131,13 @@ Um arquivo em JavaScript é tratado como um módulo. Quando é necessário utili
 
 Durante a exportação, não é obrigatório exportar todas as funções ou constantes do módulo. Aqueles elementos que não são exportados permanecem acessíveis apenas dentro do próprio arquivo e são chamados de “Hidden Members” ou “Membros Ocultos”.
 =====================================
+
+======== Export Default ========
+É possível também configurar a exportação de uma função de forma direta, sem a necessidade de utilizar uma lista de funções ou constantes a serem exportadas.
+
+Nesse caso, a função é exportada por meio do objeto exports, conforme o exemplo abaixo:
+
+exports.nome-da-funcao = (variavel) => {
+    //logica da função    
+}
+=====================================
