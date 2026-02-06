@@ -1,1 +1,3 @@
-console.log("hello ecma")
+import connectToDatabase from './utils/database.js'
+
+connectToDatabase("my-database")
