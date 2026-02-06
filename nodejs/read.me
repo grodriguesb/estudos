@@ -71,7 +71,7 @@ Explicação:
 Se powerResult1 for maior que powerResult2 e character2.PONTOS for maior que zero, subtrai 1; senão, subtrai 0 (ou seja, não altera o valor).
 =====================================
 
-## MODULO 02 - Node Modules
+## MODULO 02 - CommonJS
 
 ======== module.exports ========
 Para realizar a chamada de uma função em outro arquivo separado, deve ser realizado no codigo que será utilizado, a exportação do modulo: 
@@ -152,3 +152,14 @@ Dessa forma, pode-se realizar a chamada das funções diretamente pelo nome, sem
 funcao-1("parametro")
 =====================================
 
+## EcmaScript
+
+======== type ========
+Para utilizar o EcmaScript, se faz nescessário alterar o "type" do arquivo "package.json" para "module".
+=====================================
+
+======== export default ========
+Para exportar uma função utilizando o ECMAScript Modules (ESM), pode-se utilizar a exportação padrão (default export). Após a declaração da função, basta utilizar a palavra-chave export default seguida do nome da função.
+
+export defalt nome-da-função
+=====================================
