@@ -6,7 +6,7 @@
 
 //database.connectToDatabase("my-database")
 
-import {disconnectDatabase, connectToDatabase} from "./utils/database.js"
+import {disconnectDatabase, connectToDatabase, databaseType} from "./utils/database.js"
 
 disconnectDatabase()
 connectToDatabase()
