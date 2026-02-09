@@ -164,8 +164,17 @@ Para exportar uma função utilizando o ECMAScript Modules (ESM), pode-se utiliz
 export defalt nome-da-função
 =====================================
 
-======== export default ========
+======== import function ========
 Para importar uma função exportada com export default utilizando o ECMAScript Modules (ESM), basta utilizar a palavra-chave import seguida de um nome (que pode ser qualquer um) e do caminho do arquivo.
 
 import nome-da-função from './pasta/do/modulo/arquivo.js'
+=====================================
+
+======== multiple exports ========
+Para realizar múltiplas exportações utilizando ECMAScript Modules (ESM), é possível exportar mais de uma função ou constante no mesmo arquivo por meio do export nomeado.
+
+export {
+    nome-da-funcao-1,
+    nome-da-funcao-2
+}
 =====================================
