@@ -1,6 +1,5 @@
 // Quais ações meu carrinho pode fazer
 
-
 // CASOS DE USO
 //-> Adicionar item no carrinho
 async function addItem(userCart, item) {
@@ -18,19 +17,27 @@ async function deleteItem(userCart, name) {
 
 //-> Remover um item - diminui um item
 async function removeItem(userCart, index) {
-    
+    // transforma o indice visual do usuario, para o indice do backend
+    const deleteIndex = index - 1
+
+    // se é maior do que zero e se é menor do que o tamanho do carrinho
+    if(index >= 0 && index < userCart.length) {
+        userCart.splice(deleteIndex, 1)
+    }
 }
 
 //-> Calcular o total
 async function calculateTotal(userCart) {
+    console.log("\nShopee Cart TOTAL IS:")
+
     const result = userCart.reduce((total, item) => total + item.subtotal(), 0)
-    console.log(result)
+    console.log(`🛒 Total: ${result}`)
 }
 
 async function displaycart(userCart) {
-    console.log("Shopee cart list:")
+    console.log("\nShopee cart list:")
     userCart.forEach((item, index) =>{
-        console.log(`${index + 1}. ${item.name} - R$ ${item.price} | ${item.quantity} | Subtotal = ${item.subtotal()}`)
+        console.log(`${index + 1}. ${item.name} - R$ ${item.price} | ${item.quantity}x | Subtotal = ${item.subtotal()}`)
     })
 }
 
