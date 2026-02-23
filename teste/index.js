@@ -1,0 +1,1 @@
+let quantidadeJogos = parseInt(gets());
