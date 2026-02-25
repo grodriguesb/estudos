@@ -6,6 +6,4 @@ Eles ficam dentro da propriedade "scripts" e servem para automatizar tarefas com
 
 ======== npm run ========
 O comando npm run nome-do-script é usado para executar um script definido dentro da seção "scripts" no package.json.
-
-Ele permite rodar comandos personalizados do projeto de forma padronizada, como iniciar o servidor, rodar em modo desenvolvimento ou executar testes.
 =============================
