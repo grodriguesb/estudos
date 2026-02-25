@@ -41,3 +41,12 @@ O npm fund é um comando que informa quais bibliotecas instaladas no projeto
 no terminal digitar:
 npm found
 =============================
+
+======== Npm update ========
+O npm update é um comando usado para atualizar as dependências do projeto.
+
+Ele atualiza os pacotes para versões mais recentes permitidas pelas regras definidas no package.json, ajustando também o package-lock.json para refletir essas atualizações.
+
+no terminal:
+npm update nome-do-pacote
+=============================
