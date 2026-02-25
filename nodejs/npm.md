@@ -34,3 +34,10 @@ npm install
 
 Esse comando irá instalar as dependências listadas no package.json e utilizar o package-lock.json para garantir que as versões exatas sejam instaladas, mantendo consistência no projeto.
 =============================
+
+======== Npm found ========
+O npm fund é um comando que informa quais bibliotecas instaladas no projeto
+
+no terminal digitar:
+npm found
+=============================
