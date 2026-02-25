@@ -1,4 +1,4 @@
 import chalk from "chalk";
+import logSymbols from 'log-symbols';
 
-console.log(chalk.blue.bgGreen("Ola, eu sou"))
-console.log(chalk.green.bgCyan("Jarvis"))
+console.log(logSymbols.success, 'Finished successfully!');

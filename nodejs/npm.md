@@ -3,7 +3,14 @@
 Para instalar um pacote do npm, acessar o site www.npmjs.com e ao localizar e acessar o pacote desejado terá ao lado direito uma linha de instalação para ser digitado no terminal.
 
 pacote de exemplo:
-npm i chalk
+npm i nome-do-pacote
+=============================
+
+======== Npm uninstall ========
+Para desinstalar um pacote do npm, basta digitar no terminal.
+
+exemplo:
+npm uninstall nome-do-pacote
 =============================
 
 ======== .gitignore ========
